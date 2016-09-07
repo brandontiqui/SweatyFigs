@@ -1,6 +1,6 @@
 
 angular.module('fridegly.search', [])
-  .controller('SearchController', function($scope, Search) {
+  .controller('SearchController', function($scope, Search, $location) {
     $scope.data = {};
 
     $scope.data.ingredients = [];
@@ -33,6 +33,7 @@ angular.module('fridegly.search', [])
      */
     $scope.sendIngredients = function () {
       Search.sendIngredients($scope.data);
+      // $location.path('/recipes');
     };
 
   });
