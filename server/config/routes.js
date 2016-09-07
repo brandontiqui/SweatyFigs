@@ -1,4 +1,4 @@
-var config = require('../env/config');
+var config = require('./env/config');
 var request = require('request');
 
 module.exports = function(app) {
